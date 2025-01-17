@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Add Review</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <section class="main-nav"> 
+                <a href="homePage.html" class="logo" aria-label="Go to Home Page"></a>
+                <button onclick="window.location.href = 'reviewPage.html';" aria-label="Go to Your Reviews Page">Your Reviews</button>
+                <button onclick="window.location.href = 'addReview.html';" aria-label="Go to Add Review Page">Add Review</button>
+                <button onclick="window.location.href = 'searchSong.html';" aria-label="Go to Search Song Page">Search Song</button>
+            </section>
+        </div>
+    </header>
+    <div class="center-wrapper">
+        <div class="review-container">
+            <form id="reviewForm" novalidate>
+                <label for="songName">Search for Song/Album:</label>
+                <input 
+                  type="text" 
+                  id="songName" 
+                  placeholder="Type song or album name"
+                  autocomplete="off" 
+                  required>
+                <div id="searchResults" class="search-results"></div> <!-- Added container for search results -->
+
+                <label for="userReview">Your Review:</label>
+                <textarea 
+                  id="userReview" 
+                  name="userReview" 
+                  rows="4" 
+                  placeholder="Write your review here..." 
+                  required></textarea>
+    
+                <label for="rating">Your Rating:</label>
+                <div class="stars" id="rating">
+                    <span data-value="5" class="star" title="5 stars">&#9733;</span>
+                    <span data-value="4" class="star" title="4 stars">&#9733;</span>
+                    <span data-value="3" class="star" title="3 stars">&#9733;</span>
+                    <span data-value="2" class="star" title="2 stars">&#9733;</span>
+                    <span data-value="1" class="star" title="1 star">&#9733;</span>
+                </div>
+    
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>

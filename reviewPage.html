@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Review Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <section class="main-nav"> 
+                <a href="homePage.html"class="logo"></a>
+                <button onclick="window.location.href = 'reviewPage.html';">Your Reviews</button>
+                <button onclick="window.location.href = 'addReview.html';">Add Review</button>
+                <button onclick="window.location.href = 'searchSong.html';">Search Song</button>
+            </section>
+        </div>
+    </header>
+    
+    <main>
+        <section class="sorting-nav">
+            <div class="sort-item">Sort by Most Recent</div>
+            <div class="sort-item">Sort by Most Popular</div>
+            <div class="sort-item">Sort by High-Low</div>
+            <div class="sort-item">Sort by Low-High</div>
+            <div class="sort-item">Sort by A-Z</div>
+        </section>
+        <section class="content">
+            <h2>User Reviews</h2>
+            <ul class="reviews">
+
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
